@@ -1,0 +1,34 @@
+PODS:
+  - auto_orientation (0.0.1):
+    - Flutter
+  - brightness_volume (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+  - video_player (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - auto_orientation (from `.symlinks/plugins/auto_orientation/ios`)
+  - brightness_volume (from `.symlinks/plugins/brightness_volume/ios`)
+  - Flutter (from `Flutter`)
+  - video_player (from `.symlinks/plugins/video_player/ios`)
+
+EXTERNAL SOURCES:
+  auto_orientation:
+    :path: ".symlinks/plugins/auto_orientation/ios"
+  brightness_volume:
+    :path: ".symlinks/plugins/brightness_volume/ios"
+  Flutter:
+    :path: Flutter
+  video_player:
+    :path: ".symlinks/plugins/video_player/ios"
+
+SPEC CHECKSUMS:
+  auto_orientation: 2941c44ebe5c3d41016001597ab03e81a92a26ce
+  brightness_volume: e63139ebe38e642937d5cd286b58c9a9890f1725
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  video_player: ecd305f42e9044793efd34846e1ce64c31ea6fcb
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.11.2
