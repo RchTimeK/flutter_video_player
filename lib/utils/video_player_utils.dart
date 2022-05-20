@@ -159,11 +159,20 @@ class VideoPlayerUtils{
 
   // 释放资源
   static dispose(){
+     _instance._url = "";
     _instance._controller?.removeListener(_instance._positionListener);
-    _instance._controller?.dispose();
     _instance._statusPool.clear();
     _instance._positionPool.clear();
     _instance._initializedPool.clear();
+    _instance._initializedPool.clear();
+    _instance._state = VideoPlayerState.stopped;
+    _instance._isInitialized = false;
+    _instance._duration = const Duration(seconds: 0);
+    _instance._secondPosition = 0;
+    _instance._position = const Duration(seconds: 0);
+    _instance._aspectRatio = 1.0;
+    _instance._stopPosition = false;
+    _instance._controller = null;
   }
 
 
