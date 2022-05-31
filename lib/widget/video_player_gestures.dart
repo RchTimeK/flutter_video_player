@@ -49,8 +49,13 @@ class _VideoPlayerGesturesState extends State<VideoPlayerGestures> {
       onHorizontalDragStart: _onHorizontalDragStart,  // 手势跳转播放起始位置
       onHorizontalDragUpdate: _onHorizontalDragUpdate, // 根据手势更新快进或快退
       onHorizontalDragEnd: _onHorizontalDragEnd,  // 手势结束seekTo
-      child: Stack(
-        children: _children,
+      child: Container( // 保证手势全屏
+        width: double.maxFinite,
+        height: double.maxFinite,
+        color: Colors.white,
+        child: Stack(
+          children: _children,
+        ),
       ),
     );
   }
